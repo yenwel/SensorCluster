@@ -1,0 +1,49 @@
+create table AALOCGUID
+(
+  id       VARCHAR2(32) default SYS_GUID() not null,
+  loclocid NUMBER(9)
+)
+tablespace LOCUS_DATA_1
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table AALOCGUID
+  add constraint AALOCGUID_PK primary key (ID)
+  using index 
+  tablespace LOCUS_INDEX_1
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table AALOCGUID
+  add constraint AALOCGUID_UK unique (LOCLOCID)
+  using index 
+  tablespace LOCUS_INDEX_1
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table AALOCGUID
+  add constraint AALOCGUID_LOC_FK foreign key (LOCLOCID)
+  references LOC (LOCID) on delete set null;
+

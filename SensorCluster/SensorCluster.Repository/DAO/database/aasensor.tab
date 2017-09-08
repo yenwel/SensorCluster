@@ -1,0 +1,56 @@
+create table AASENSOR
+(
+  id      VARCHAR2(32) default sys_guid() not null,
+  uri     VARCHAR2(2000) default 'tcp://127.0.0.1:23' not null,
+  type    VARCHAR2(20),
+  lastval NUMBER default 0 not null,
+  time    TIMESTAMP(6) default sysdate not null,
+  locguid VARCHAR2(32)
+)
+tablespace LOCUS_DATA_1
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table AASENSOR
+  add constraint AASENSOR_PK primary key (ID)
+  using index 
+  tablespace LOCUS_INDEX_1
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table AASENSOR
+  add constraint AASENSOR_UK unique (URI, TYPE, LOCGUID)
+  using index 
+  tablespace LOCUS_INDEX_1
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table AASENSOR
+  add constraint AASENSOR_LOCID foreign key (LOCGUID)
+  references AALOCGUID (ID);
+alter table AASENSOR
+  add constraint AASENSORTYPE_CH
+  check (TYPE IS NULL OR TYPE IN ('SCALE'));
+

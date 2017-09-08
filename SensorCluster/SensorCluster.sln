@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorCluster", "SensorCluster\SensorCluster.csproj", "{B5BBABB5-A7AC-4B8F-9705-775961B80589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorCluster.Model", "SensorCluster.Model\SensorCluster.Model.csproj", "{748D58A7-3851-40F6-AE32-569EB535A039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorCluster.Repository", "SensorCluster.Repository\SensorCluster.Repository.csproj", "{690FD12B-9DCD-4B08-BE2C-FEB7380A56E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorCluster.SensorSystem", "SensorCluster.ActorSystem\SensorCluster.SensorSystem.csproj", "{9525C868-1E23-4E30-A987-B57764BDCDD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorCluster.General", "SensorCluster.General\SensorCluster.General.csproj", "{896AAB1E-7541-40A0-A4B3-EECF43DD508F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorCluster.Tests", "SensorCluster.Tests\SensorCluster.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5BBABB5-A7AC-4B8F-9705-775961B80589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BBABB5-A7AC-4B8F-9705-775961B80589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BBABB5-A7AC-4B8F-9705-775961B80589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BBABB5-A7AC-4B8F-9705-775961B80589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748D58A7-3851-40F6-AE32-569EB535A039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748D58A7-3851-40F6-AE32-569EB535A039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748D58A7-3851-40F6-AE32-569EB535A039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748D58A7-3851-40F6-AE32-569EB535A039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{690FD12B-9DCD-4B08-BE2C-FEB7380A56E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690FD12B-9DCD-4B08-BE2C-FEB7380A56E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690FD12B-9DCD-4B08-BE2C-FEB7380A56E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690FD12B-9DCD-4B08-BE2C-FEB7380A56E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9525C868-1E23-4E30-A987-B57764BDCDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9525C868-1E23-4E30-A987-B57764BDCDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9525C868-1E23-4E30-A987-B57764BDCDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9525C868-1E23-4E30-A987-B57764BDCDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896AAB1E-7541-40A0-A4B3-EECF43DD508F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896AAB1E-7541-40A0-A4B3-EECF43DD508F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896AAB1E-7541-40A0-A4B3-EECF43DD508F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896AAB1E-7541-40A0-A4B3-EECF43DD508F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
